@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to right, #f8fafc, #eaf4ff);
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(to right, #ff5722, #ff7043);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Cart item styles */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+/* Delete button styles */
+.delete-item {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 5px;
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-item i {
+  font-size: 1rem;
+}
+
+.delete-item:hover {
+  color: darkred;
+}
+
+/* Styles for the header with smaller logo in the corner */
+.header {
+  position: relative;
+  background: linear-gradient(to right, #ff5722, #ff7043);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Add a logo in the corner with smaller size */
+.header .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; /* smaller size */
+  height: auto;
+}
+
+/* Other header styles */
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.category-menu {
+  background-color: #f0f4ff;
+  width: 20%;
+  min-width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.category-menu .category-toggle {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.category-menu ul {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.category-menu ul li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.category-menu ul li:hover {
+  background: #ff7043;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.product-grid {
+  flex-grow: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.cart-section {
+  background-color: #ffe9e6;
+  width: 20%;
+  min-width: 200px;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.cart-section h3 {
+  margin-top: 0;
+}
+
+.cart-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-section li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-section button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cart-section button:hover {
+  background: #ff7043;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .category-menu,
+  .cart-section {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product h4 {
+  margin: 10px 0 5px;
+}
+
+.product p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.add-to-cart {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background: #ff7043;
+}
+
+/* Basic responsive layout for the categories and cart */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+#category-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  height: 100%;
+}
+
+#category-menu h3 {
+  margin-top: 0;
+}
+
+#category-menu button {
+  width: 100%;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#category-menu button:hover {
+  background-color: #555;
+}
+
+#product-list {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.food-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #category-menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #product-list {
+    margin-left: 0;
+  }
+}

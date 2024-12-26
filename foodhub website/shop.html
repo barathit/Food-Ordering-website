@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+     <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>FOOD HUB</title>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="./images/WhatsApp Image 2024-11-20 at 19.35.59_01fdfd24.jpg"
+          alt="Food Hub Logo"
+          class="logo"
+        />
+      </div>
+      <h1 class="h11">Delicious Foods, Delivered to Your Gate!</h1>
+      
+    </header>
+
+    <div class="main-container">
+      <!-- Left Sidebar (Categories) -->
+      <aside class="category-menu">
+        <button class="category-toggle">☰ Categories</button>
+        <ul id="category-list" class="hidden">
+          <li data-mess="Anu Mess">Anu Mess</li>
+          <li data-mess="Annai Mess">Annai Mess</li>
+          <li data-mess="CFC Restaurant">CFC Restaurant</li>
+          <li data-mess="Gowri Mess">Gowri Mess</li>
+          <li data-mess="SS Mess">SS Mess</li>
+        </ul>
+      </aside>
+
+      <!-- Center Products Section -->
+      <main class="product-grid" id="product-container">
+        <p>Select a mess to see available foods.</p>
+      </main>
+
+      <!-- Right Sidebar (Cart) -->
+      <aside class="cart-section">
+        <h3>Your Cart</h3>
+        <div class="cart-icon d-flex">
+              <i class="bx bx-shopping-bag"></i>
+              <span>0</span>
+        <ul id="cart-items">
+          <!-- Example cart item with delete icon -->
+          <li class="cart-item">
+            <span class="item-name">Chicken Biryani - ₹120</span>
+            <button class="delete-item">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </li>
+        </ul>
+
+        <button id="checkoutBtn">Proceed to Checkout</button>
+      </aside>
+    </div>
+
+    <script src="shop.js"></script>
+  </body>
+</html>
